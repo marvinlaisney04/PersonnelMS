@@ -30,11 +30,5 @@ public class PersonnelController {
 		public List<Personnel> getAllPersonnel(){
 			return this.personnelRepository.findAll();
 		}
-	
-	/*@RequestMapping("/login")
-	public String login(){
-		return "login";
-	}*/
-	
 
 }
