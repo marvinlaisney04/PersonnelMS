@@ -13,17 +13,15 @@ import com.hopital.personnelms.repository.PersonnelRepository;
 @RestController
 @RequestMapping
 public class PersonnelController {
-	
+
 	@Autowired
 	private PersonnelRepository personnelRepository;
-	
-	//GET READ
-	
-		@GetMapping("/personnel")
-		public List<Personnel> getAllPersonnel(){
-			return this.personnelRepository.findAll();
-		}
-	
-	
+
+	// GET READ
+
+	@GetMapping("/personnel")
+	public List<Personnel> getAllPersonnel() {
+		return this.personnelRepository.findAll();
+	}
 
 }
