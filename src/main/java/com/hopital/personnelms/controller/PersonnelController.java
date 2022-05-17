@@ -11,7 +11,7 @@ import com.hopital.personnelms.model.Personnel;
 import com.hopital.personnelms.repository.PersonnelRepository;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api")
 public class PersonnelController {
 
 	@Autowired
