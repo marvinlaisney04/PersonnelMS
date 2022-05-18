@@ -11,7 +11,7 @@ import com.hopital.personnelms.model.Personnel;
 import com.hopital.personnelms.repository.PersonnelRepository;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/personnel")
 public class PersonnelController {
 
 	@Autowired
@@ -19,7 +19,7 @@ public class PersonnelController {
 
 	// GET READ
 
-	@GetMapping("/personnel")
+	@GetMapping("/")
 	public List<Personnel> getAllPersonnel() {
 		return this.personnelRepository.findAll();
 	}
